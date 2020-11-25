@@ -1,0 +1,175 @@
+/* Importation Police */
+@font-face {
+    font-family: "GlacialIndifference-Bold";
+    src: url("../police/GlacialIndifference-Bold.otf");
+}
+@font-face {
+    font-family: "GlacialIndifference-Regular";
+    src: url("../police/GlacialIndifference-Regular.otf");
+}
+/* Fin Importation Police */
+
+/* Police */
+.policeBold {
+    font-family: GlacialIndifference-Bold;
+}
+.policeRegular {
+    font-family: GlacialIndifference-Regular;
+}
+/* Fin Police */
+
+/* Couleur*/
+.ColorBackNav {
+    background: linear-gradient(#f16c5b, #da716e);
+}
+.ColorOrange{
+    color : #f16c5b;
+}
+.ColorBlack{
+    color : black
+}
+.WhiteSmoke {
+    color : whitesmoke;
+}
+.WhiteOrange {
+    color : #ffd5bd
+}
+.background-white {
+    background-color: whitesmoke;
+}
+/* Fin Couleur*/
+
+/* General */
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.row {
+    padding: 3%;
+}
+.index {
+    z-index: -1;
+}
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+/* Fin General */
+
+/* Nav Bar */
+.nav-link {
+    font-size: 20px;
+}
+.logo {
+    height: 70px;
+    width: 70px;
+}
+/* Fin Nav Bar */
+
+/* Header */
+.flou {
+    filter: blur(16px);
+}
+.TitreHead {
+    font-size: 60px;
+    margin-top: 40px;
+}
+.OmbreHead {
+    text-shadow: whitesmoke 0.1em 0.1em 0.2em;
+}
+.RechercheStage {
+    margin-bottom: 40px;
+}
+.dateRecherche{
+    font-size: 20px;
+}
+/* Fin Header */
+
+/* À Propos */
+.Bordure {
+    border-radius: 20px 20px 20px 20px;
+}
+.presentation {
+    margin-top: 3%;
+}
+.ProposPrenom {
+    font-size: 20px;
+}
+.CVDownload{
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 16px;
+    background : linear-gradient(#f16c5b, #da716e);
+    display : inline-block;
+}
+.CVDownload:hover{
+    background : #d95f50;
+    border-color: #d95f50;
+}
+.LinkedinDownload {
+    font-size: 16px;
+    font-weight: 700;
+    background : linear-gradient(#f16c5b, #da716e);
+    padding: 12px 26px;
+    display : inline-block;
+    margin-left: 18px;
+}
+.LinkedinDownload:hover {
+    background : #d95f50;
+    border-color: #d95f50;
+}
+.photo{
+    margin-top : 20px;
+    margin-left: 23%;
+    position:absolute;
+}
+.img-circle {
+    border-radius: 50%;
+    border : 2px solid whitesmoke;
+    display : inline-block;
+    position:absolute;
+}
+a:hover {
+    color: whitesmoke;
+    text-decoration : none;
+}
+@media (max-width: 1000px) {
+    .hidden-xs {
+        display: none !important;
+    }
+}
+/* Fin À Propos */
+
+/* Compétences */
+.comp {
+    margin: 5%;
+}
+.bordureC {
+    border : 2px solid whitesmoke;
+    box-shadow : 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    background : whitesmoke;
+}
+.bordureC:hover {
+    background : #e8e8e8;
+    border-color: #e8e8e8;
+}
+/* Fin Compétences */
+
+/* Formations & Experiences */
+.NomFormation {
+    font-size: 30px;
+}
+.NomVille {
+    font-size: 15px;
+}
+/* Fin Formations & Experiences */
+
+/* Projet */
+.ProjetInfo{
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 12px;
+    background : linear-gradient(#f16c5b, #da716e);
+    display : inline-block;
+}
+/* Fin Projet */

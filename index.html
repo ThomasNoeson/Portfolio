@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style2.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <title>Choix de la langue</title>
+</head>
+
+<body>
+
+    <!-- Contenu de la page -->
+    <div class="container-fluid h-100 p-0">
+        <img alt="banniere" class="flou fixed-top index" src="img/banner.png">
+        <div class="row m-0 mt-5">
+            <div class="row col-12 text-center m-0">
+                <div class="container h-100 p-0">
+                    <div class="text policeBold OmbreHead"></div>
+                </div>
+            </div>
+            <div class="row col-12 text-center m-0">
+                    <span class="center">
+                        <a class="p-3" href="html/francais.index.html"><img alt="LogoFrance" class="drapeauF" src="img/LogoFrancais.png"></a>
+                        <a class="p-3" href="html/anglais.index.html"><img alt="LogoAngleterre" class="drapeauA" src="img/LogoAnglais.png"></a>
+                    </span>
+            </div>
+        </div>
+    </div>
+     Fin Contenu de la page -->
+
+    <script>
+
+        const phrases = [
+            'C&rsquo;est simple,',
+            'Veuillez choisir,',
+            'Fran&ccedil;ais ou Anglais'
+        ]
+
+        const el = document.querySelector('.text')
+        const fx = new TextScramble(el)
+
+        let counter = 0
+        const next = () => {
+            fx.setText(phrases[counter]).then(() => {
+                setTimeout(next, 800)
+            })
+            counter = (counter + 1) % phrases.length
+        }
+
+        next()
+
+    </script>
+
+</body>
+</html>

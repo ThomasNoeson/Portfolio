@@ -1,0 +1,64 @@
+/* Importation Police */
+@font-face {
+    font-family: "GlacialIndifference-Bold";
+    src: url("../police/GlacialIndifference-Bold.otf");
+}
+/* Fin Importation Police */
+
+/* Police */
+.policeBold {
+    font-family: GlacialIndifference-Bold;
+}
+/* Fin Police */
+
+/* General */
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.row {
+    padding: 3.5%;
+}
+.index {
+    z-index: -1;
+}
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+.flou {
+    filter: blur(26px);
+}
+.drapeauF {
+    width: 10.2em;
+    height: 10.2em;
+    border-radius: 50px;
+}
+.drapeauA {
+    width: 10em;
+    height: 10em;
+    border-radius: 50px;
+}
+/* Fin General */
+
+/* Script */
+.container{
+    height: 100%;
+    width :100%;
+    justify-content :center;
+    align-items :center;
+    display :flex;
+}
+
+.text{
+    font-weight:100;
+    font-size:48px;
+    color: #f16c5b;
+}
+.dud{
+    color: #757575;
+}
+.OmbreHead {
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+/* Fin Script */
